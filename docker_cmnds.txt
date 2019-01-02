@@ -1,0 +1,36 @@
+Start docker service
+
+# systemctl start docker
+
+Load docker image
+
+# docker image load -i=docker-aem-63-author-publish.tar.bz2
+
+Run AEM docker image
+
+# docker run --network=host aem:author-6.3 -p 4502:4502 -p 9511:9511
+# sudo docker run --name=author-sp --network=host image:author -p 4502:4502 -p 9511:9511
+
+Starting existing container
+
+Get list of containers
+
+# docker ps -a
+
+Get the NAME or CONTAINER IDfrom the above command and run the following
+
+# sudo docker start nervous_colden [container_name] 
+
+Stop running container
+
+# sudo docker stop nervous_colden [container_name]
+
+Access into container
+
+# docker exec -it container_name /bin/bash
+
+
+
+<sly data-sly-use.clientlibJS="/libs/granite/sightly/templates/clientlib.html">
+  <sly data-sly-call="${clientlibJS.js @ categories='granite.utils, granite.jquery'}"/>
+</sly>
