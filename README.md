@@ -1,4 +1,6 @@
 # summit-toys
-starter aem project
 
-experiencing adobe experience manager
+
+### Starter AEM project
+
+Experiencing adobe experience manager
